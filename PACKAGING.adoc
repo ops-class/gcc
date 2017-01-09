@@ -65,11 +65,17 @@ Commit everything to `master` before continuing.
 make -f Makefile.packaging test
 ----
 
-The above command will create a test package and use `pbuilder` to test a
-clean build, but it does not sign packages.
+The above command will create a test package but does not sign packages.
 //
-You will need to install `pbuilder` and create an appropriate testing
-environment, currently for Xenial: `pbuilder-dist xenial create`.
+*Note that because GCC depends on the binary utilities (`binutils`) we do not
+test it using `pbuilder`.*
+//
+There are ways to set up `pbuilder` local dependencies, but it's hairy and not
+worth the effort.
+//
+Rather, test it by pushing it to the PPA and seeing if it can build.
+//
+(Launchpad will resolve local PPA dependencies automatically.)
 //
 Use it to iron out any build issues.
 //
