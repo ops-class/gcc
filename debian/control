@@ -1,0 +1,19 @@
+Source: gcc-mips-linux-os161
+Section: utils
+Priority: optional
+Maintainer: Scott Haseley <shaseley@buffalo.edu>
+Build-Depends: debhelper (>= 9), libgmp3-dev, libmpfr-dev, libmpc-dev, binutils-mips-linux-os161, bison, flex
+Standards-Version: 3.9.7
+Homepage: http://www.eecs.harvard.edu/~dholland/os161/
+Vcs-Browser: https://github.com/ops-class/gcc
+Vcs-Git: git://github.com/ops-class/gcc.git
+
+Package: gcc-mips-linux-os161
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: gcc for OS/161 cross compile
+ OS/161 is a teaching operating system, that is, a simplified system used for
+ teaching undergraduate operating systems classes. It is BSD-like in feel and
+ has more "reality" than most other teaching OSes; while it runs on a simulator
+ it has the structure and design of a larger system. This is a modified gcc for
+ use with OS/161.

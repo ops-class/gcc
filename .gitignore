@@ -1,0 +1,7 @@
+/packages
+/src/Makefile
+/src/config.log
+/src/config.status
+*.swp
+*.swo
+*.o

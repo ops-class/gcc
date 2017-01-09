@@ -1,0 +1,11 @@
+gcc-mips-linux-os161 binary: license-problem-gfdl-invariants
+gcc-mips-linux-os161 binary: outdated-autotools-helper-file
+gcc-mips-linux-os161 binary: ancient-libtool
+gcc-mips-linux-os161 binary: binary-is-missing
+gcc-mips-linux-os161 binary: license-problem-non-free-RFC
+gcc-mips-linux-os161 binary: embedded-library
+gcc-mips-linux-os161 binary: file-in-unusual-dir
+gcc-mips-linux-os161 binary: non-standard-dir-in-usr
+gcc-mips-linux-os161 binary: binary-without-manpage
+gcc-mips-linux-os161 binary: postrm-has-useless-call-to-ldconfig
+gcc-mips-linux-os161 binary: postinst-has-useless-call-to-ldconfig

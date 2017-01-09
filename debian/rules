@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+export DEB_BUILD_MAINT_OPTIONS=hardening=-format
+
+override_dh_update_autotools_config:
+
+override_dh_auto_configure:
+	find src -name '*.info' | xargs touch
+	touch src/intl/plural.c
+	src/configure \
+		--enable-languages=c,lto \
+		--nfp --disable-shared --disable-threads \
+		--disable-libmudflap --disable-libssp \
+		--disable-libstdcxx --disable-nls \
+		--target=mips-harvard-os161 \
+		--prefix=/usr
+
+override_dh_auto_install:
+	make install DESTDIR=$(CURDIR)/debian/gcc-mips-linux-os161
+
+override_dh_fixperms:
+	dh_fixperms
+	rm -f $(CURDIR)/debian/gcc-mips-linux-os161/usr/share/info/*
+	rm -rf $(CURDIR)/debian/gcc-mips-linux-os161/usr/share/man/man7/
+	cd $(CURDIR)/debian/gcc-mips-linux-os161/usr/bin && sh -c 'for i in mips-*; do ln -s $$i os161-`echo $$i | cut -d- -f4-`; done'
+
+override_dh_auto_test:
+
+%:
+	dh $@
+
+# vim: ts=2:sw=2:noet

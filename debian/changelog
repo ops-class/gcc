@@ -1,0 +1,35 @@
+gcc-mips-linux-os161 (4.8.3-0ubuntu6) precise; urgency=medium
+
+  * Precise.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Thu, 15 Jan 2015 23:11:58 -0500
+
+gcc-mips-linux-os161 (4.8.3-0ubuntu5) trusty; urgency=medium
+
+  * Fix. 
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Thu, 15 Jan 2015 22:56:40 -0500
+
+gcc-mips-linux-os161 (4.8.3-0ubuntu4) trusty; urgency=medium
+
+  * Trusty. 
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Thu, 15 Jan 2015 20:37:25 -0500
+
+gcc-mips-linux-os161 (4.8.3-0ubuntu3) precise; urgency=medium
+
+  * Install fix. 
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Thu, 15 Jan 2015 20:18:29 -0500
+
+gcc-mips-linux-os161 (4.8.3-0ubuntu2) precise; urgency=medium
+
+  * Precise release. 
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Thu, 15 Jan 2015 19:41:32 -0500
+
+gcc-mips-linux-os161 (4.8.3-0ubuntu1) trusty; urgency=low
+
+  * Initial release
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Wed, 14 Jan 2015 21:32:08 +0000
