@@ -1,0 +1,4 @@
+/tmp
+*.log
+*.substvars
+debhelper-build-stamp
