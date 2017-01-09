@@ -9,3 +9,4 @@ gcc-mips-linux-os161 source: non-standard-dir-in-usr
 gcc-mips-linux-os161 source: binary-without-manpage
 gcc-mips-linux-os161 source: postrm-has-useless-call-to-ldconfig
 gcc-mips-linux-os161 source: postinst-has-useless-call-to-ldconfig
+gcc-mips-linux-os161 source: source-contains-prebuilt-ms-help-file src/zlib/contrib/dotzlib/DotZLib.chm
