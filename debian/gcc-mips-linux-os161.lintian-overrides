@@ -10,3 +10,4 @@ gcc-mips-linux-os161 binary: binary-without-manpage
 gcc-mips-linux-os161 binary: postrm-has-useless-call-to-ldconfig
 gcc-mips-linux-os161 binary: postinst-has-useless-call-to-ldconfig
 gcc-mips-linux-os161 binary: source-contains-prebuilt-ms-help-file src/zlib/contrib/dotzlib/DotZLib.chm
+gcc-mips-linux-os161 binary: latest-debian-changelog-entry-without-new-version

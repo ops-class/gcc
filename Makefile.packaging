@@ -8,7 +8,7 @@ sign: clean
 	gbp buildpackage --git-builder="debuild -S"
 
 clean:
-	@git clean -f -X -d
+	@git clean -f -X -d -q
 
 .PHONY: test sign update clean
 
